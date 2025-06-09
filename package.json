@@ -1,0 +1,32 @@
+{
+  "name": "react-crash",
+  "version": "0.0.1",
+  "description": "It will contain all test application in the react js for practices porpose",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build --no-source-maps",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saravanan323/React_Crash.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "saravanan.s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saravanan323/React_Crash/issues"
+  },
+  "homepage": "https://github.com/saravanan323/React_Crash#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rimraf": "^6.0.1"
+  }
+}
