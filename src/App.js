@@ -1,18 +1,15 @@
 // index.jsx or main.jsx
-// import React from "react";
 import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-  useLocation,
-} from "react-router";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
 
 import Header from "./components/Header";
 import ToDoHome from "./screen/todo/ToDoHome";
 import Home from "./screen/Home";
+// Import your other components
+// import App1 from "./screen/App1";
+// import App2 from "./screen/App2";
+// import Portfolio from "./screen/Portfolio";
 
-// Layout wrapper
 const AppLayout = () => (
   <>
     <Header />
@@ -20,25 +17,34 @@ const AppLayout = () => (
   </>
 );
 
-
-// Define routes
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
     children: [
       {
-        index: true, // This renders when path === "/"
+        index: true,
         element: <Home />,
       },
       {
-        path: "ToDo",
+        path: "todo",
         element: <ToDoHome />,
       },
+      // {
+      //   path: "app1",
+      //   element: <App1 />,
+      // },
+      // {
+      //   path: "app2",
+      //   element: <App2 />,
+      // },
+      // {
+      //   path: "portfolio",
+      //   element: <Portfolio />,
+      // },
     ],
   },
 ]);
 
-// Mount app
 const root = createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
