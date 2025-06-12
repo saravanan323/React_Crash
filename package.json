@@ -4,7 +4,8 @@
   "description": "It will contain all test application in the react js for practices porpose",
   "scripts": {
     "start": "parcel index.html --no-cache",
-    "build": "parcel build index.html",
+    "clean": "rd /s /q .parcel-cache dist",
+    "build": "npm run clean && parcel build index.html",
     "test": "jest"
   },
   "repository": {

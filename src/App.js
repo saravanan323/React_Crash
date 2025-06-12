@@ -11,10 +11,12 @@ import Home from "./screen/Home";
 // import Portfolio from "./screen/Portfolio";
 
 const AppLayout = () => (
-  <>
+  <div className="h-screen flex flex-col">
     <Header />
-    <Outlet />
-  </>
+    <main className="flex-1 overflow-y-auto">
+      <Outlet />
+    </main>
+  </div>
 );
 
 const router = createBrowserRouter([
