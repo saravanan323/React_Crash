@@ -12,7 +12,7 @@ const Header = () => {
         <div className="relative flex items-center justify-center bg-teal-400 p-4 rounded-lg shadow-md">
           {showButton && (
             <button
-              className="absolute left-4 bg-blue-600 text-white px-4 py-2 rounded-md flex items-center cursor-pointer rounded-[5px] bg-[#4300FF] hover:bg-blue-400 active:bg-blue-500"
+              className="absolute left-4 bg-blue-600 text-white px-4 py-2 rounded-md flex items-center cursor-pointer bg-[#4300FF] hover:bg-blue-400 active:bg-blue-500"
               onClick={() => navigate("/")}
             >
               <svg

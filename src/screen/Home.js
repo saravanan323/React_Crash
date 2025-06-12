@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="grid grid-cols-6 gap-2">
+      <div className="grid grid-cols-5 gap-2">
         <button
           className="border-4 border-white p-20 m-10 flex justify-center cursor-pointer rounded-3xl bg-[#4E71FF] hover:bg-[#8DD8FF] focus:outline-4 focus:outline-offset-2 focus:outline-[#4E71FF] active:bg-[#4E71FF]"
           onClick={() => navigate("/todo")}
